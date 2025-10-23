@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @page {
+    size: A4;
+    margin: 15mm 0mm;
+  }
+  
+  body {
+    @apply font-calibri;
+  }
+}
+
+@layer utilities {
+  @media print {
+    /* Hide print button */
+    .no-print {
+      display: none !important;
+    }
+    
+    /* Enable backgrounds and colors for skill bars */
+    * {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      color-adjust: exact !important;
+    }
+    
+    /* Remove default browser print headers/footers */
+    @page {
+      margin: 15mm 10mm;
+    }
+    
+    /* Ensure backgrounds are visible */
+    body {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    
+    /* Page break controls */
+    .print-page-break {
+      page-break-after: always;
+    }
+    
+    .print-avoid-break {
+      page-break-inside: avoid;
+      break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+    }
+    
+    .print-avoid-break-before {
+      page-break-before: avoid;
+    }
+    
+    .print-avoid-break-after {
+      page-break-after: avoid;
+    }
+  }
+}
