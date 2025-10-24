@@ -196,9 +196,9 @@ function App() {
               <div className="grid grid-cols-2 gap-4">
                 {Object.entries(cvData.technicalSkills).map(([category, skills]) => (
                   <div key={category}>
-                    <h3 className="text-[11pt] font-bold text-cv-dark mb-2">{category}</h3>
+                    <h3 className="text-[11pt] font-bold text-cv-dark mb-2 border-b border-cv-dark pb-1">{category}</h3>
                     {skills.map((skill, index) => (
-                      <div key={index} className="text-[10pt] mb-1">
+                      <div key={index} className="text-[9pt] mb-1">
                         <strong className="text-cv-dark">{skill.name}</strong>{' '}
                         <span className="text-cv-gray text-[9pt]">{skill.level}</span>
                       </div>

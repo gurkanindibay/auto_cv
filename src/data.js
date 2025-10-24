@@ -9,11 +9,11 @@ export const cvData = {
     nationality: "Turkish",
     links: {
       github: "https://github.com/gurkanindibay",
-      linkedin: "https://www.linkedin.com/in/gurkanindibay/"
+      linkedin: "https://www.linkedin.com/in/g%C3%BCrkan-indibay/"
     }
   },
   
-  summary: "Results-driven Software Engineering Manager with 20+ years of experience leading high-performing teams and transforming legacy infrastructure at large corporations. Proven track record of delivering critical projects under pressure, including rebuilding regulatory-compliant systems in 30 days and modernizing stalled 4-year projects into production-ready platforms. Expert in scaling teams, implementing DevOps practices, and architecting cloud-native solutions across finance, telecommunications, and enterprise software domains.",
+  summary: "Results-driven Software Engineering Manager with 20+ years of experience leading high-performing teams and transforming legacy infrastructure at large corporations. Proven track record of delivering critical projects under pressure, including rebuilding regulatory-compliant systems in 30 days and modernizing stalled 4-year projects into production-ready platforms. Expert in scaling teams, implementing DevOps practices, and architecting cloud-native solutions across finance, telecommunications, and enterprise software domains. Skilled in integrating AI tools like GitHub Copilot into SDLC processes to enhance productivity, code quality, and accelerate development cycles.",
   
   achievements: [
     {
@@ -63,7 +63,8 @@ export const cvData = {
     { name: "Project Management", level: 95 },
     { name: "Agile Methodologies", level: 95 },
     { name: "Team Leadership", level: 95 },
-    { name: "Product Management", level: 80 }
+    { name: "Product Management", level: 80 },
+    { name: "GitHub Copilot", level: 90 }
   ],
   
   languages: [
