@@ -226,7 +226,8 @@ export const cvData = {
       { name: "Docker", level: "Advanced (5+ years)" },
       { name: "PostgreSQL", level: "Advanced (8+ years)" },
       { name: "React", level: "Intermediate (2+ years)" },
-      { name: "Kubernetes", level: "Advanced (3+ years)" }
+      { name: "Kubernetes", level: "Advanced (3+ years)" },
+      { name: "GitHub Copilot", level: "Advanced (2+ years)" }
     ],
     "Architecture & DevOps": [
       { name: "Microservices Architecture", level: "Expert (8+ years)" },
