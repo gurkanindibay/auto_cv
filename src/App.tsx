@@ -1,7 +1,7 @@
 import { Download, Phone, Mail, Github, Linkedin, MapPin } from 'lucide-react';
 import { cvData } from './data';
 
-function App() {
+function App(): JSX.Element {
   const handlePrint = () => {
     window.print();
   };

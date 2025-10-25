@@ -1,4 +1,69 @@
-export const cvData = {
+interface Personal {
+  name: string;
+  title: string;
+  location: string;
+  phone: string;
+  email: string;
+  birthYear: string;
+  nationality: string;
+  links: {
+    github: string;
+    linkedin: string;
+  };
+}
+
+interface Skill {
+  name: string;
+  level: number;
+}
+
+interface Language {
+  name: string;
+  level: string;
+}
+
+interface Achievement {
+  title: string;
+  description: string;
+}
+
+interface Job {
+  title: string;
+  company: string;
+  period: string;
+  responsibilities: string[];
+}
+
+interface Education {
+  degree: string;
+  institution: string;
+  period: string;
+}
+
+interface Certification {
+  name: string;
+  organization: string;
+  period?: string;
+}
+
+interface TechnicalSkill {
+  name: string;
+  level: string;
+}
+
+interface CvData {
+  personal: Personal;
+  summary: string;
+  achievements: Achievement[];
+  skills: Skill[];
+  languages: Language[];
+  experience: Job[];
+  education: Education[];
+  certifications: Certification[];
+  technicalSkills: { [category: string]: TechnicalSkill[] };
+}
+
+export const cvData: CvData = {
   personal: {
     name: "GÜRKAN INDIBAY",
     title: "SOFTWARE ENGINEERING MANAGER & TEAM LEADER",
